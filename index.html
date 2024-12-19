@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Aid</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <h1 class="">Study/revision aid</h1>
+    <h3 class="mb-4"> Use controls to see cards</h3>
+    <section class="section-one">        
+        <div class="cards-div mb-4">
+            <p id="card-num" class="mb-4 mt-4"> Cards</p>
+            <span id="card-content" class="card-content" 
+                onclick="flipCard()"></span>
+        </div>
+        <div class="controls-div mb-4">
+            <p class="mb-4 ms-6">Controls</p>
+            <button type="button" class="control-btn mt-4" 
+                    onclick="getNextCard()">
+                Next 
+            </button>
+            <button type="button" class="control-btn"
+                    onclick="flipCard()">
+                Flip 
+            </button>
+            <button class="control-btn">
+                Previous
+            </button>
+        </div>
+    </section>
+    
+    <script src="./objs.js"></script>
+</body>
+</html>
