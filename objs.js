@@ -52,6 +52,15 @@ function getNextCard(){
     }         
     //console.log(counter)
 }
+function getPreviousCard(){
+    counter--
+    resetCounter()
+    if(counter >= 0){
+        cardContentEl.textContent = 
+            theItems[counter][Object.keys(theItems[counter])]
+        cardNumEl.textContent = "Card " + (counter + 1)
+    }
+}
 function resetCounter(){    
     if(counter < 0 || counter === null){
         counter = 0
