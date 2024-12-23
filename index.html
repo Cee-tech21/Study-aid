@@ -18,20 +18,25 @@
         <div class="controls-div mb-4">
             <p class="mb-4 ms-6">Controls</p>
             <button type="button" class="control-btn mt-4" 
-                    onclick="getNextCard()">
+                   id="next-btn" >
                 Next 
             </button>
             <button type="button" class="control-btn"
-                    onclick="flipCard()">
+                   id="flip-btn" >
                 Flip 
             </button>
-            <button class="control-btn" 
+            <button class="control-btn" id="get-previous"
                     onclick="getPreviousCard()">
                 Previous
+            </button>
+            <button class="control-btn">
+                Hard
             </button>
         </div>
     </section>
     
-    <script src="./objs.js"></script>
+    <script src="./objs.js" type="module"></script>
+    
+    
 </body>
 </html>

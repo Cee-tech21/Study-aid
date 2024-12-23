@@ -1,14 +1,18 @@
-theItems = [
+import headGlands from "./head_glands.js"
+
+let theItems = [
             {"Beta receptor": "receptor to which adrenaline and noradrenaline bind causing an increase in heart rate and blood pressure "},
             {"adrenal gland": "glands located above each kidney, secrete hormones such as adrenaline and cortisol"},
             {"renin": "precursor to the hormone angiotensin"},
             {"Onionin A": "sulfur-containing compound contained in onions, elicits anti-cancer responses"}
 
 ]
-
 // Get elements from DOM
 let cardContentEl = document.querySelector("#card-content")
 let cardNumEl = document.querySelector("#card-num")
+let getNextBtn = document.querySelector("#next-btn")
+let flipCardBtn = document.querySelector("#flip-btn")
+let previousBtn = document.querySelector("#get-previous")
 
 // Initialise some variables
 let theToggle = true
@@ -18,7 +22,10 @@ let initialContent = "Questions get displayed here"
 
 // Make function call
 setInitialContent()
-
+getNextBtn.addEventListener("click", getNextCard)
+flipCardBtn.addEventListener("click", flipCard)
+previousBtn.addEventListener("click", getPreviousCard)
+cardContentEl.addEventListener("click", flipCard)
 
 // use counter to iterate through array
 // length of array will be used to determine number of data items
