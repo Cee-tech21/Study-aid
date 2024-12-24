@@ -1,4 +1,4 @@
-import headGlands from "./head_glands.js"
+import headGlands from "./Qbank/head_glands.js"
 
 let theItems = [
             {"Beta receptor": "receptor to which adrenaline and noradrenaline bind causing an increase in heart rate and blood pressure "},
@@ -13,6 +13,7 @@ let cardNumEl = document.querySelector("#card-num")
 let getNextBtn = document.querySelector("#next-btn")
 let flipCardBtn = document.querySelector("#flip-btn")
 let previousBtn = document.querySelector("#get-previous")
+let headGlandBtn = document.querySelector("#head-gland-qus")
 
 // Initialise some variables
 let theToggle = true
@@ -26,6 +27,7 @@ getNextBtn.addEventListener("click", getNextCard)
 flipCardBtn.addEventListener("click", flipCard)
 previousBtn.addEventListener("click", getPreviousCard)
 cardContentEl.addEventListener("click", flipCard)
+headGlandBtn.addEventListener("click", useHeadGland)
 
 // use counter to iterate through array
 // length of array will be used to determine number of data items
@@ -37,6 +39,9 @@ cardContentEl.addEventListener("click", flipCard)
 function setInitialContent(){
     //set initial card content
     cardContentEl.textContent = initialContent
+}
+function useHeadGland(){
+    theItems = headGlands
 }
 function flipCard(){
     theToggle = !theToggle
