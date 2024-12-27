@@ -41,6 +41,7 @@ function setInitialContent(){
     cardContentEl.textContent = initialContent
 }
 function useHeadGland(){
+    counter = -3
     theItems = headGlands
 }
 function flipCard(){
