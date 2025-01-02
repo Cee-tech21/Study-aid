@@ -19,7 +19,7 @@ let headGlandBtn = document.querySelector("#head-gland-qus")
 let theToggle = true
 let counter = -11
 
-let initialContent = "Questions get displayed here"
+let initialContent = "Questions get displayed here "
 
 // Make function call
 setInitialContent()
@@ -62,7 +62,8 @@ function getNextCard(){
         cardContentEl.textContent = 
              theItems[counter][Object.keys(theItems[counter])] 
         cardNumEl.textContent = "Card " + (counter + 1)
-    }         
+    } 
+    theToggle = true    //set value of toggle        
     //console.log(counter)
 }
 function getPreviousCard(){
@@ -73,6 +74,7 @@ function getPreviousCard(){
             theItems[counter][Object.keys(theItems[counter])]
         cardNumEl.textContent = "Card " + (counter + 1)
     }
+    theToggle = true  // set value of toggle
 }
 function resetCounter(){    
     if(counter < 0 || counter === null){

@@ -33,6 +33,8 @@ h1{
 .card-content{
     background: #1f0202;
     text-align: center;
+    min-height: 400px;
+    min-width: 500px;
 }
 .controls-div{
     display: flex;
