@@ -43,6 +43,7 @@ function setInitialContent(){
 function useHeadGland(){
     counter = -3
     theItems = headGlands
+    triggerAnimation()
 }
 function flipCard(){
     theToggle = !theToggle
@@ -57,8 +58,8 @@ function flipCard(){
 function getNextCard(){
     counter++
     resetCounter()
-    if(counter < theItems.length){
-        
+    triggerAnimation()
+    if(counter < theItems.length){        
         cardContentEl.textContent = 
              theItems[counter][Object.keys(theItems[counter])] 
         cardNumEl.textContent = "Card " + (counter + 1)
@@ -83,4 +84,9 @@ function resetCounter(){
     if(counter === theItems.length){
         counter = 0
     } 
+}
+function triggerAnimation(){
+    setTimeout(_ => cardContentEl.classList.toggle("anim-class"),
+    0)
+    cardContentEl.classList.remove("anim-class")
 }

@@ -36,6 +36,15 @@ h1{
     min-height: 400px;
     min-width: 500px;
 }
+.anim-class{
+    animation: add-anim 1.2s
+}
+@keyframes add-anim {
+    0% {opacity: 0;}
+    100% {opacity: 0.5;}   
+    
+}
+
 .controls-div{
     display: flex;
     flex-direction: column;
