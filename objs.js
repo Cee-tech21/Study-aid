@@ -44,6 +44,8 @@ function useHeadGland(){
     counter = -3
     theItems = headGlands
     triggerAnimation()
+    cardContentEl.textContent = "Now some questions on " +
+                                    "  head glands"
 }
 function flipCard(){
     theToggle = !theToggle
