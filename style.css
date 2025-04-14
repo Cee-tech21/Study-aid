@@ -96,16 +96,17 @@ h1{
         box-sizing: border-box;
     }
     body{
-        font-size: 17px;
-        max-width: 400px;
+        font-size: 16px;
+        max-width: 388px;
         word-wrap: break-word;
         text-wrap: wrap;
         /* padding: 0px; */
         
     }
-    .card-content{
-        max-width: 100px;        
-        padding: 80px;        
+    .card-content{        
+        padding: 80px;   
+        line-height: 2 ; 
+         
     }
     .controls-div button{
         font-size: 13px;
